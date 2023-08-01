@@ -1,6 +1,8 @@
 import { useState , useEffect} from "react"
 import { getDatabase, ref, set, push, onValue, remove, update } from "firebase/database";
 
+import image from './img/img3.jpg';
+
 function App() {
 
   const db = getDatabase();
@@ -93,7 +95,14 @@ let handleLine = (e) =>{
 
   return (
     <>
+
+
      <div className="container">
+
+      <div className="person">
+        <img className="img" src={image} alt="" />
+      </div>
+
      <h3 className="fire">JASIA'S DAILY TASK</h3>
      <input name="tname" onChange={handleChange} placeholder="todo" type="text" value={values.tname} />
      <input name="tdes" onChange={handleChange} placeholder="description" type="text" value={values.tdes} />

@@ -26,6 +26,22 @@ a:hover {
 ul , li{
   text-decoration: none;
   list-style: circle;
+  
+}
+
+.img{
+  width: 120px;
+  height: 120px;
+  /* border-radius: 100%; */
+}
+
+.person{
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  
+  overflow: hidden;
 }
 
 body {
